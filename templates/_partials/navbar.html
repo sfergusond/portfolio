@@ -1,0 +1,26 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+	<a class="navbar-brand js-scroll-trigger" href="{% if page == 'home' %}#page-top{% else %}/{% endif %}">
+		<span class="d-block d-lg-none">Spencer Ferguson-Dryden</span>
+		<span class="d-none d-lg-block"><img class="shadow img-fluid img-profile rounded-circle mx-auto mb-2" src="https://avatars3.githubusercontent.com/u/4807415?s=460&u=d866921ddeaf0ab56a04bb9c4d7da6c73e065cf5&v=4" alt="Profile Photo" /></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav">
+			{% if page == 'home' %}
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+			{% elif page == 'detail' %}
+			<li class="nav-item"><a class="nav-link" href="/#portfolio"><i class="fas fa-arrow-left mr-2"></i>Back</a></li>
+			{% elif page == 'error' %}
+			<li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-arrow-left mr-2"></i>Back</a></li>
+			{% endif %}
+		</ul>
+	</div>
+</nav>

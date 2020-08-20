@@ -1,0 +1,43 @@
+<section class="resume-section" id="contact">
+	<div class="resume-section-content">
+		<h2 class="mb-2">Contact Me</h2>
+		
+		<div class="subheading mb-5"><a href="mailto:sfergusond@gmail.com">sfergusond@gmail.com</a> | (415) 926-0150</div>
+	
+		<form method="POST" action="" id="contact" name="contact">
+			<div class="form-group">
+				<div class="form-row">
+					{{ contact.first_name.label_tag }}
+				</div>
+				<div class="form-row mb-4">
+					<div class="col" style="padding-left: 0px">
+					 {{ contact.first_name }}
+					</div>
+					<div class="col" style="padding-right: 0px">
+					 {{ contact.last_name }}
+					</div>
+				</div>
+				
+				<div class="form-row">
+					{{ contact.email.label_tag }}
+				</div>
+				<div class="form-row mb-4">
+					{{ contact.email }}
+				</div>
+				
+				<div class="form-row">
+					{{ contact.message.label_tag }}
+				</div>
+				<div class="form-row mb-4">
+					{{ contact.message }}
+				</div>
+				
+				<div class="form-row">
+					{{ contact.captcha }}
+					<button type="submit" class="btn btn-primary px-4 py-2 shadow" id="contact" name="contact"><i class="far fa-paper-plane mr-2"></i>SEND</button>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+</section>

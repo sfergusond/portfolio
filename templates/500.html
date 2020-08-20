@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% include '_partials/navbar.html' with page='error' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container" style="min-height:30rem">
+
+	<div class="justify-content-center row text-center" style="margin-top: 8rem;">
+		<h1>Oops!<br>An error has occurred</h1>
+	</div>
+	<div class="justify-content-center row text-center">
+		<h3 class="text-dark">Please try again later<br>If the problem persists, please <a href="/#contact" class="text-info"><u>contact me</u></a></h3>
+	</div>
+
+</div>
+
+{% endblock %}

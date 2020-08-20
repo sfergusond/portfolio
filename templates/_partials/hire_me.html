@@ -1,0 +1,80 @@
+<div class="modal fade" id="hireMe" tabindex="-1" role="dialog" aria-labelledby="hireMeLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header bg-primary">
+				<h4 class="modal-title text-light subheading" id="hireMeLabel">Project Proposal</h4>
+				<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form class="form-group px-4" action="" method="POST" id="hire" name="hire">
+				<div class="modal-body">
+					<p class="text-center">Please fill out the fields below and I will be in touch with you shortly.</p>
+					
+					<div class="form-row">
+						{{ hire.first_name.label_tag }}
+					</div>
+					<div class="form-row mb-4">
+						<div class="col" style="padding-left: 0px">
+						 {{ hire.first_name }}
+						</div>
+						<div class="col" style="padding-right: 0px">
+						 {{ hire.last_name }}
+						</div>
+					</div>
+					
+					<div class="form-row">
+						{{ hire.email.label_tag }}
+					</div>
+					<div class="form-row mb-4">
+						{{ hire.email }}
+					</div>
+					
+					<div class="form-row">
+						{{ hire.title.label_tag }}
+					</div>
+					<div class="form-row mb-4">
+						{{ hire.title }}
+					</div>
+					
+					<div class="form-row">
+						<div class="col">
+							{{ hire.budget.label_tag }}
+						</div>
+						<div class="col">
+							{{ hire.deadline.label_tag }}
+						</div>
+					</div>
+					<div class="form-row mb-4">
+						<div class="col" style="padding-left: 0px">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend shadow-sm">
+									<span class="input-group-text" id="basic-addon1">$</span>
+								</div>
+								{{ hire.budget }}
+								<div class="input-group-append">
+									{{ hire.payment_type }}
+								</div>
+							</div>
+						</div>
+						<div class="col" style="padding-right: 0px">
+							{{ hire.deadline }}
+						</div>
+					</div>
+						
+					<div class="form-row">
+					{{ hire.description.label_tag }}
+					</div>
+					<div class="form-row mb-4">
+						{{ hire.description }}
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					{{ hire.captcha }}
+					<button type="submit" class="btn btn-block btn-primary shadow" id="hire" name="hire">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
