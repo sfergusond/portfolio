@@ -12,10 +12,15 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+# Init environment variables if on my local device
+if 'sferg' in os.path.expanduser('~'):
+    try:
+        from __docs__ import __secrets__
+    except Exception as e:
+        print(e)
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -24,7 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('LOCAL')
 
 ALLOWED_HOSTS = ['localhost', 'spencerfd.herokuapp.com', 'www.spencerfd.me']
 

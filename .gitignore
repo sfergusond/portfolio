@@ -1,6 +1,6 @@
 # MY STUFF
-secrets.txt
-docs/
+__secrets__.py
+__docs__/
 /static/
 
 # SQLite
