@@ -9,12 +9,14 @@ ENV PYTHONUNBUFFERED 1
 # install dependencies
 COPY requirements.txt /app/requirements.txt
 RUN apk add g++
+RUN apk add tk
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python manage.py collectstatic --noinput
 
 # copy project
 COPY . .
+
+RUN python manage.py collectstatic --noinput
 
 EXPOSE 8080
 
