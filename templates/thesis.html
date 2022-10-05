@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% include 'components/navbar.html' with page='detail' %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3 pl-4">
+	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+		{% include 'components/carouselIndicators.html' with n='6' %}
+		<div class="carousel-inner">
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597872696/portfolio/thesis/emran_khalil_byun7e.png' active=1 %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871785/portfolio/thesis/fig1.18_oovr37.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871786/portfolio/thesis/taliban_word_network_i7awt5.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871818/portfolio/thesis/amba_word_network_wmgqlv.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871785/portfolio/thesis/unique_words_ythyag.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871818/portfolio/thesis/fig4.8_toxser.png' %}
+		</div>
+		{% include 'components/carouselArrows.html' %}
+	</div>
+
+  {% include 'components/projectDetailHeader.html' with title='Tweeting Rebellion:' subtitle='How Social Media Intensifies Insurgent Conflicts' link='https://drive.google.com/u/0/uc?id=18pr5GTTAS2TM9s1173NTPUUuxrLOYvvg&export=download' %}
+	
+	<p class="mx-3">
+    The spread of the internet around the world is often hailed as an advancement in economic opportunities, education, health, 
+    and quality of life for those who gain access to it. However, a clear understanding of the sinister impacts of the spread of the internet, 
+    such as its potential role in the rising levels of political violence around the world, eludes scholars and policymakers alike. 
+    Does social media play a role in the level of violence during insurgent conflict? More specifically, 
+    can the adoption of social media by insurgencies increase the intensity of the conflict?
+    <br><br>
+    I define insurgency as a conflict in which an asymmetrically weak actor attempts to violently seize political power from the 
+    existing government, while conflict intensity will be measured through the frequency of conflict events or battle deaths. 
+    I argue that strategic usage of social media leads to increased levels of conflict intensity. 
+    More specifically, the use of social media allows insurgencies to engage more effectively, cheaply, 
+    and emotionally with target audiences to disseminate a narrative that facilitates recruitment, encourages material support, 
+    fuels pro-insurgent sympathies, and encourages the use of violence.
+    <br><br>
+    This dynamic will be illustrated through in-group analyses of three case studies: 
+    the Ambazonia separatist movement in Cameroon, the Taliban insurgency in Afghanistan, and the Boko Haram insurgency in Nigeria. 
+    Conflict data for each case study was gathered to include a period in which the insurgency strategically utilized social media 
+    and a period before social media was used. Social media data for each insurgency, including text and metadata, 
+    was collected mainly from Twitter. Statistical analyses linking increased conflict intensity with increased social media usage 
+    shows the plausibility of the argument while a content analysis of Twitter data is used to explain the link using my theory.
+    <br><br>
+    The results show that the intensity levels of the conflicts increased along with the insurgencies’ strategic use of social media. 
+    An analysis of Twitter content revealed slightly varying mechanisms by which this occurred, 
+    but ultimately showed that insurgent rhetoric on Twitter allowed the insurgencies to more effectively recruit militants, 
+    secure foreign support, and disseminate propaganda designed to sway civilian sympathies. 
+    However, the Boko Haram case shows that failing to use social media strategically does not result in a link between social media 
+    usage and increased conflict intensity. The results present implications to both policymakers and private corporations. 
+    In future asymmetric wars, policymakers will have a better understanding for how the digital theatre shapes on-the-ground 
+    conflict dynamics while technology companies will have a better understanding of how to monitor their platforms to prevent 
+    escalating violence.
+  </p>
+	
+</div>
+{% endblock %}

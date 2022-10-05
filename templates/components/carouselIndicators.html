@@ -1,0 +1,14 @@
+{% with ''|center:n as range %}
+<ol class="carousel-indicators rounded-pill" style="background-color: #00000045">
+  {% for _ in range %}
+  <li
+    data-target="#carouselExampleIndicators"
+    data-slide-to="{{ forloop.counter0 }}"
+    {% if forloop.counter0 == 0 %}
+    class="active"
+    {% endif %}
+  >
+  </li>
+  {% endfor %}
+</ol>
+{% endwith %}

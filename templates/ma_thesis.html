@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% include 'components/navbar.html' with page='detail' %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3 pl-4">
+	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+    {% include 'components/carouselIndicators.html' with n='6' %}
+		<div class="carousel-inner">
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607231/portfolio/ma_thesis/4nn_xdqbdq.png' active=1 %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607250/portfolio/ma_thesis/std_dev_mil_2002_oszrm4.png' %}
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607249/portfolio/ma_thesis/std_dev_mil_1996_iupkf4.png' %}
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607239/portfolio/ma_thesis/threat_correlations_j7q0bf.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607216/portfolio/ma_thesis/morans_fdi_rsvsbb.png' %}
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607216/portfolio/ma_thesis/threat_fdi_zeng6j.png' %}
+		</div>
+		{% include 'components/carouselArrows.html' %}
+	</div>
+
+  {% include 'components/projectDetailHeader.html' with title='Does FDI Matter?' subtitle='Assessing How Foreign Direct Investment Impacts the Geography of Defense Spending' link='http://dx.doi.org/10.6082/uchicago.3181' %}
+	
+	<p class="mx-3">
+    What is the relationship between the level of economic interdependence among states and the 
+    geography of defense spending? I argue that as the level of economic interdependence in a 
+    region increases, the geographic structure of defense spending weakens. States in a highly 
+    interdependent system will have defense expenditures that correlate weakly to the defense 
+    expenditures of nearby states. Conversely, in a less interdependent system, states with high 
+    defense expenditure are more likely to be located near other states with high defense 
+    expenditure. The argument is evaluated by constructing spatial models of defense spending in 
+    Europe in the period of 1995-2019. The models will produce the Moran’s I statistic, which 
+    measures the geographic structure of defense spending, and a count of threat responsive
+    countries, defined as states with high defense expenditure in proximity to other states with high 
+    defense expenditure. Foreign direct investment flows is used to operationalize the economic 
+    interdependence variable. The resulting linear regressions shows a significant inverse 
+    relationship between the level of foreign direct investment and the number of threat responsive 
+    countries
+  </p>
+
+</div>
+{% endblock %}

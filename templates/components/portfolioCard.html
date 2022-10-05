@@ -1,0 +1,17 @@
+<div class="card bg-white border-primary text-center shadow">
+  <img alt="icon" src="{{ src }}" class="card-img-top p-1" alt="">
+  <div class="card-body">
+    <h4 class="card-title">{{ title }}</h4>
+    {% if subtitle %}
+    <h6 class="card-subtitle mb-3">{{ subtitle }}</h6>
+    {% endif %}
+    <p class="card-text">{{ description }}</p>
+    <a href="{{ link }}" class="btn btn-primary shadow-sm">Details</a>
+    {% if externalLink %}
+    <a href="{{ externalLink }}" class="btn btn-outline-primary shadow-sm ml-1">
+      <i class="fas fa-external-link-alt mr-2"></i>
+      View
+    </a>
+    {% endif %}
+  </div>
+</div>

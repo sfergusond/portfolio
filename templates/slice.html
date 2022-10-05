@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% include 'components/navbar.html' with page='detail' %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3 pl-4">
+	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+		{% include 'components/carouselIndicators.html' with n='4' %}
+		<div class="carousel-inner">
+      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1613707609/portfolio/slice.fm/Screenshot_2021-02-18_214254_k0z99n.png' active=1 %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1613707610/portfolio/slice.fm/login_g9bcep.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1613707609/portfolio/slice.fm/Screenshot_2021-02-18_214811_kurffo.png' %}
+			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1613707609/portfolio/slice.fm/Screenshot_2021-02-18_214719_etgjzt.png' %}
+		</div>
+		{% include 'components/carouselArrows.html' %}
+	</div>
+
+  {% include 'components/projectDetailHeader.html' with title='Slice.fm' link='https://slice.fm/' %}
+	
+	<p class="mx-3">
+    Slice.fm began as a web application for podcasters. 
+    The initial incaration of the website allowed podcasters to register, choose a subscription status, 
+    and use the trailer-maker tool to easily make, customize, and share trailers for their podcasts. 
+    Using a range of AWS services, and Google Cloud Speech-to-Text, 
+    I built a scalable application capable of producing hundred of podcast trailers simulaneously. 
+    See the 
+    <b><a href="https://slice.fm/trailer-features">features page</a></b> 
+    for more information.
+  </p>
+
+</div>
+{% endblock %}
