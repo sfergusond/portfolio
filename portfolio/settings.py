@@ -33,8 +33,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = os.environ.get('LOCAL')
 
 ALLOWED_HOSTS = [
-  'spencerfd.herokuapp.com',
-  'www.spencerfd.me'
+  'www.spencerfd.me',
+  'spencerfd.fly.dev'
 ]
 if DEBUG:
   ALLOWED_HOSTS.append('localhost')
