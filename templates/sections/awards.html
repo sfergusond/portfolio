@@ -2,26 +2,93 @@
 <section class="resume-section" id="awards">
 	<div class="resume-section-content">
 		<h2 class="mb-5">Extracurriculars & Awards</h2>
+
+    <div class="subheading mb-3">Professional</div>
+    <ul class="fa-ul mb-5">
+      {% include 'components/award.html' with 
+        link='https://www.boozallen.com/about/our-values-and-ethics/leading-with-purpose-and-values.html#championsheart'
+        title="Booz Allen Hamilton Champion's Heart Award"
+        description='Awarded for outstanding service as a software engineer in a federal government contract'
+        date='May 2022'
+      %}
+    </ul>
+
 		<div class="subheading mb-3">Academic</div>
 		<ul class="fa-ul mb-5">
-      {% include 'components/award.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599014621/portfolio/amherst_j7ihds.png' link='https://www.amherst.edu/news/specialevents/commencement/speeches_multimedia/commencement-2020/senior-awards-prizes-2020' title='The Densmore Berry Collins Prize in Political Science' description='Awarded to the best senior thesis by the Amherst College Department of Political Science' date='May 2020' rounded=1 %}
-			{% include 'components/award.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597950385/portfolio/cosida_wst1hx.png' link='https://athletics.amherst.edu/news/2020/6/17/6_17_2020_375.aspx' title='CoSIDA Academic All-District' description='One of three NESCAC student-athletes selected to represent District 1 on the national ballot for the CoSIDA Academic All-American Team' date='June 2020' %}
-			{% include 'components/award.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597950385/portfolio/cosida_wst1hx.png' link='https://en.wikipedia.org/wiki/Academic_All-America' title='CoSIDA Academic All-American (3rd Team)' description='Selected by a national panel in recognition of outstanding athleteic and academic achievement' date='June 2020' %}
+      {% include 'components/award.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599014621/portfolio/amherst_j7ihds.png' 
+        link='https://www.amherst.edu/news/specialevents/commencement/speeches_multimedia/commencement-2020/senior-awards-prizes-2020' 
+        title='The Densmore Berry Collins Prize in Political Science' 
+        description='Awarded to the best senior thesis by the Amherst College Department of Political Science' 
+        date='May 2020' 
+        rounded=1 
+      %}
+			{% include 'components/award.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597950385/portfolio/cosida_wst1hx.png' 
+        link='https://athletics.amherst.edu/news/2020/6/17/6_17_2020_375.aspx' 
+        title='CoSIDA Academic All-District' 
+        description='One of three NESCAC student-athletes selected to represent District 1 on the national ballot for the CoSIDA Academic All-American Team' 
+        date='June 2020' 
+      %}
+			{% include 'components/award.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597950385/portfolio/cosida_wst1hx.png' 
+        link='https://en.wikipedia.org/wiki/Academic_All-America' 
+        title='CoSIDA Academic All-American (3rd Team)' 
+        description='Selected by a national panel in recognition of outstanding athleteic and academic achievement' 
+        date='June 2020' 
+      %}
 		</ul>
 		
 		<div class="subheading mb-3">Athletic</div>
 		<ul class="fa-ul mb-5">
-      {% include 'components/award.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597786478/portfolio/ncaa_track_it6b0c.png' link='http://athletics.amherst.edu/sports/mtrack/index' title='Amherst College Varsity Track & Field' description='As captain, advised the coaches on mid-distance training plans and led practices in the absence of coaches. Contributed to a national podium relay finish at the 2019 NCAA DIII Indoor National Championships.' date='December 2016 - March 2020' %}
+      {% include 'components/award.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597786478/portfolio/ncaa_track_it6b0c.png' 
+        link='http://athletics.amherst.edu/sports/mtrack/index' 
+        title='Amherst College Varsity Track & Field' 
+        description='As captain, advised the coaches on mid-distance training plans and led practices in the absence of coaches. Contributed to a national podium relay finish at the 2019 NCAA DIII Indoor National Championships.' 
+        date='December 2016 - March 2020' 
+      %}
       <ul class="fa-ul mb-5">
-        {% include 'components/award.html' with icon='fa-trophy' title='NCAA D3 All-American' description='National qualifier, Distance Medley Relay' date='2019, 2020' %}
-        {% include 'components/award.html' with icon='fa-trophy' title='NCAA D3 New England All-Region' description='New England 1500m Champion, Indoor Mile Honorable Mention' date='2019, 2020' %}
-        {% include 'components/award.html' with icon='fa-trophy' title='NCAA D3 All-Academic' description='National qualifier with a GPA of at least 3.30/4.00' date='2018, 2019 & 2020' %}
+        {% include 'components/award.html' with 
+          icon='fa-trophy' 
+          title='NCAA D3 All-American' 
+          description='National qualifier, Distance Medley Relay' 
+          date='2019, 2020' 
+        %}
+        {% include 'components/award.html' with 
+          icon='fa-trophy' 
+          title='NCAA D3 New England All-Region' 
+          description='New England 1500m Champion, Indoor Mile Honorable Mention' 
+          date='2019, 2020' 
+        %}
+        {% include 'components/award.html' with 
+          icon='fa-trophy' 
+          title='NCAA D3 All-Academic' 
+          description='National qualifier with a GPA of at least 3.30/4.00' 
+          date='2018, 2019 & 2020' 
+        %}
       </ul>
 			
-      {% include 'components/award.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597786510/portfolio/ncaa_xc_hacoik.png' link='http://athletics.amherst.edu/sports/mxc/index' title='Amherst College Varsity Cross Country' description='As captain, established and enforced clear teamwide cultural, academic, and athletic goals, led the organization and planning of team events, served as point-of-contact for incoming first years, and assisted coaches with training plans and logistics. Contributed to a program-first podium finish at the 2017 NCAA DIII National Championships, a New England Region Championship title, two NESCAC Championship titles, and two NESCAC runner-up titles' date='August 2016 - November 2019' %}
+      {% include 'components/award.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597786510/portfolio/ncaa_xc_hacoik.png' 
+        link='http://athletics.amherst.edu/sports/mxc/index' 
+        title='Amherst College Varsity Cross Country' 
+        description='As captain, established and enforced clear teamwide cultural, academic, and athletic goals, led the organization and planning of team events, served as point-of-contact for incoming first years, and assisted coaches with training plans and logistics. Contributed to a program-first podium finish at the 2017 NCAA DIII National Championships, a New England Region Championship title, two NESCAC Championship titles, and two NESCAC runner-up titles' 
+        date='August 2016 - November 2019' 
+      %}
       <ul class="fa-ul">
-        {% include 'components/award.html' with icon='fa-trophy' title='NCAA D3 All-New England' description='11th place finisher at the NCAA D3 New England XC Championship' date='November 2019' %}
-        {% include 'components/award.html' with icon='fa-trophy' title='NCAA D3 All-Academic' description='National qualifier with a GPA of at least 3.30/4.00' date='2018 & 2020' %}
+        {% include 'components/award.html' with 
+          icon='fa-trophy' 
+          title='NCAA D3 All-New England' 
+          description='11th place finisher at the NCAA D3 New England XC Championship' 
+          date='November 2019' 
+        %}
+        {% include 'components/award.html' with 
+          icon='fa-trophy' 
+          title='NCAA D3 All-Academic' 
+          description='National qualifier with a GPA of at least 3.30/4.00' 
+          date='2018 & 2020' 
+        %}
       </ul>
     </ul>
 	</div>

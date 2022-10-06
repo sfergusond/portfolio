@@ -9,14 +9,25 @@
 	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
 		{% include 'components/carouselIndicators.html' with n='3' %}
 		<div class="carousel-inner">
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606211/portfolio/election_vulnerabilities/k-means_nsxyct.png' active=1 %}
-			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606209/portfolio/election_vulnerabilities/dre_no_vvpat_selected_old_h8zatv.png' %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606208/portfolio/election_vulnerabilities/dre_no_vvpat_selected_overworked_jdcruv.png' %}
+      {% include 'components/carouselItem.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606211/portfolio/election_vulnerabilities/k-means_nsxyct.png' 
+        active=1 
+      %}
+			{% include 'components/carouselItem.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606209/portfolio/election_vulnerabilities/dre_no_vvpat_selected_old_h8zatv.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625606208/portfolio/election_vulnerabilities/dre_no_vvpat_selected_overworked_jdcruv.png' 
+      %}
 		</div>
 		{% include 'components/carouselArrows.html' %}
 	</div>
 
-  {% include 'components/projectDetailHeader.html' with title='Uncovering Election Vulnerabilities' subtitle='A spatial &#38; machine learning approach to analyzing election concerns in the US.' link='https://drive.google.com/file/d/1PMIIR3AbqV6EYqz3qHXnzwEnZ_qivNAC/view?usp=sharing' %}
+  {% include 'components/projectDetailHeader.html' with 
+    title='Uncovering Election Vulnerabilities' 
+    subtitle='A spatial &#38; machine learning approach to analyzing election concerns in the US.' 
+    link='https://drive.google.com/file/d/1PMIIR3AbqV6EYqz3qHXnzwEnZ_qivNAC/view?usp=sharing' 
+  %}
 		
 </div>
 {% endblock %}

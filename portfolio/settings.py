@@ -129,3 +129,8 @@ DEFAULT_FROM_EMAIL = 'Spencer Ferguson-Dryden <sfergusond@gmail.com>'
 DATE_INPUT_FORMATS = '%d/%m/%Y'
 RECAPTCHA_PUBLIC_KEY = os.environ.get('RECAPTCHA_KEY', '')
 RECAPTCHA_PRIVATE_KEY = os.environ.get('RECAPTCHA_SECRET', '')
+
+# Template hack
+import re
+from django.template import base
+base.tag_re = re.compile(base.tag_re.pattern, re.DOTALL)
