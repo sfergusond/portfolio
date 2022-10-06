@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% include 'components/navbar.html' with page='detail' %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3 pl-4">
+	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+    {% include 'components/carouselIndicators.html' with n='2' %}
+		<div class="carousel-inner">
+      {% include 'components/carouselItem.html' with 
+        src='img/lfc_landscape/lfc_landscape_splash.png' 
+        active=1 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/lfc_landscape/lfc_landscape_1.png' 
+      %}
+		</div>
+		{% include 'components/carouselArrows.html' %}
+	</div>
+
+  {% include 'components/projectDetailHeader.html' with 
+    title='Lever for Change Grant Proposal Landscape' 
+    subtitle='Using machine learning to cluster & analyze grant applications' 
+    link='https://lfc-landscape.herokuapp.com/' 
+  %}
+	
+	<p class="mx-3">
+    Using a machine learning approach built on Dash and scikit-learn, the LFC Proposal Landscape 
+    application allows users to explore and find connections between thousands of non-profit grant 
+    applications.
+  </p>
+  <p class="mx-3">
+    <a href="https://github.com/LeverForChange/proposal-landscape" target="_blank">View GitHub repo for web application</a>
+  </p>
+  <p class="mx-3">
+    <a href="https://github.com/LeverForChange/proposal-similarity-pipeline" target="_blank">View GitHub repo for machine learning pipeline</a>
+  </p>
+
+</div>
+{% endblock %}

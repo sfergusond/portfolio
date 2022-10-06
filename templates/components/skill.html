@@ -1,5 +1,12 @@
+{% load static %}
+
 <div class="subheading mb-1">
-  <img alt="icon" src="{{ src }}" style="min-height: 3rem; max-height: 3rem" class="mr-2" />
+  <img 
+    alt="icon" 
+    src="{% static src %}" 
+    style="min-height: 3rem; max-height: 3rem" 
+    class="mr-2" 
+  />
   <span class="text-primary">{{ title }}</span>
 </div>
 <p class="small my-2" style="min-height: 3rem; max-height: 3rem">{{ description }}</p>

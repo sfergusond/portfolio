@@ -1,16 +1,20 @@
+{% load static %}
+
 <li class="row mb-3">
   <div class="col-md-8 flex-grow-1">
     <span class="fa-li">
       {% if src %}
       <img 
-        alt="icon" src="{{ src }}" style="max-height: 3rem" 
+        alt="icon" 
+        src="{% static src %}" 
+        style="max-height: 3rem" 
         {% if rounded %}
         class="rounded-circle m-sm-n1" 
         {% else %}
         class="mr-3"
         {% endif %}
       />
-      {% else %}
+      {% elif icon %}
       <i class="fas {{ icon }} text-warning"></i>
       {% endif %}
     </span>

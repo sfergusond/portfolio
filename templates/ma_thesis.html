@@ -9,17 +9,37 @@
 	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
     {% include 'components/carouselIndicators.html' with n='6' %}
 		<div class="carousel-inner">
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607231/portfolio/ma_thesis/4nn_xdqbdq.png' active=1 %}
-			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607250/portfolio/ma_thesis/std_dev_mil_2002_oszrm4.png' %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607249/portfolio/ma_thesis/std_dev_mil_1996_iupkf4.png' %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607239/portfolio/ma_thesis/threat_correlations_j7q0bf.png' %}
-			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607216/portfolio/ma_thesis/morans_fdi_rsvsbb.png' %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607216/portfolio/ma_thesis/threat_fdi_zeng6j.png' %}
+      {% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_splash.png' 
+        active=1 
+      %}
+			{% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_1.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_2.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_3.png' 
+      %}
+			{% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_4.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_5.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/ma_thesis/ma_thesis_6.png' 
+      %}
 		</div>
 		{% include 'components/carouselArrows.html' %}
 	</div>
 
-  {% include 'components/projectDetailHeader.html' with title='Does FDI Matter?' subtitle='Assessing How Foreign Direct Investment Impacts the Geography of Defense Spending' link='http://dx.doi.org/10.6082/uchicago.3181' %}
+  {% include 'components/projectDetailHeader.html' with 
+    title='Does FDI Matter?' 
+    subtitle='Assessing How Foreign Direct Investment Impacts the Geography of Defense Spending' 
+    link='http://dx.doi.org/10.6082/uchicago.3181' 
+  %}
 	
 	<p class="mx-3">
     What is the relationship between the level of economic interdependence among states and the 

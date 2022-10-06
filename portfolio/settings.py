@@ -113,8 +113,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'portfolio/static'),
-    ("js", os.path.join(STATIC_ROOT, 'js')),
-    ("css", os.path.join(STATIC_ROOT, 'css')),
+  ("js", os.path.join(STATIC_ROOT, 'js')),
+  ("css", os.path.join(STATIC_ROOT, 'css')),
+  ("img", os.path.join (STATIC_ROOT, 'img')),
 ]
 
 # SMPT CONFIG
@@ -129,3 +130,8 @@ DEFAULT_FROM_EMAIL = 'Spencer Ferguson-Dryden <sfergusond@gmail.com>'
 DATE_INPUT_FORMATS = '%d/%m/%Y'
 RECAPTCHA_PUBLIC_KEY = os.environ.get('RECAPTCHA_KEY', '')
 RECAPTCHA_PRIVATE_KEY = os.environ.get('RECAPTCHA_SECRET', '')
+
+# Template hack
+import re
+from django.template import base
+base.tag_re = re.compile(base.tag_re.pattern, re.DOTALL)

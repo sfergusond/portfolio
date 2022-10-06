@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
 	{% include 'components/navbar.html' with page='detail' %}
@@ -9,23 +10,45 @@
 	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
 		{% include 'components/carouselIndicators.html' with n='4' %}
 		<div class="carousel-inner">
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599018629/portfolio/movieengine/desktop_home_page-min_oge64j.png' active=1 %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599018626/portfolio/movieengine/mobile_home_page-min_hdouyz.png' %}
-			{% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599018627/portfolio/movieengine/success-min_cknuco.png' %}
-      {% include 'components/carouselItem.html' with src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1599018627/portfolio/movieengine/no_results-min_n5mwiy.png' %}
+      {% include 'components/carouselItem.html' with 
+        src='img/movieengine/me_splash.png' 
+        active=1 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/movieengine/me_1.png' 
+      %}
+			{% include 'components/carouselItem.html' with 
+        src='img/movieengine/me_2.png' 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/movieengine/me_3.png' 
+      %}
 		</div>
 		{% include 'components/carouselArrows.html' %}
 	</div>
 
-  {% include 'components/projectDetailHeader.html' with title='Movie Engine' link='https://movieengine.org/' %}
+  {% include 'components/projectDetailHeader.html' with 
+    title='Movie Engine' 
+    link='https://movieengine.org/' 
+  %}
 	
-	<p class="mx-3">My client's goal for Move Engine was a simple web application to determine if two actors have worked together in a movie or TV show. The client desired a <b>fast and device-responsive site with minimal costs.</b></p>
-	<p class="mx-3 mb-5">I built the site in <b>four days</b>. The result was a fast, reliable, smoothly functioning site with modern visuals and a readable layout. The best part? <b>the deliverable had zero recurring server costs</b>.</p>
+	<p class="mx-3">
+    My client's goal for Move Engine was a simple web application to determine if two actors have worked together in a movie or TV show. 
+    The client desired a <b>fast and device-responsive site with minimal costs.</b>
+  </p>
 	
 	<div class="subheading text-center mb-3">Client Testimonial</div>
 	<blockquote class="blockquote text-center">
-		<p class="mb-0">Charles was extremely responsive and worked quickly. Final product was exactly how I had imagined. Would work with him again.</p>
-		<footer class="blockquote-footer">Movie Engine Founder<cite title="Source Title"><a href="https://www.upwork.com/freelancers/~01811f6c6cf1a25ebb?viewMode=1">(Upwork Contract Feedback)</a></cite></footer>
+		<p class="mb-0">
+      Spencer was extremely responsive and worked quickly. 
+      Final product was exactly how I had imagined. Would work with him again.
+    </p>
+		<footer class="blockquote-footer">
+      Movie Engine Founder
+      <cite title="Source Title">
+        <a href="https://www.upwork.com/freelancers/~01811f6c6cf1a25ebb?viewMode=1">(Upwork Contract Feedback)</a>
+      </cite>
+    </footer>
 	</blockquote>
 	
 </div>
