@@ -1,6 +1,12 @@
+{% load static %}
 <div class="col-md-8 flex-grow-1">
   <span class="fa-li">
-    <img alt="icon" src="{{ src }}" style="max-height: 3rem" class="rounded-circle m-sm-n1" />
+    <img 
+      alt="icon" 
+      src="{% static src %}" 
+      style="max-height: 3rem" 
+      class="rounded-circle m-sm-n1" 
+    />
   </span>
   <span class="font-weight-bold d-block pl-2 mt-2">{{ title }}</span>
 </div>

@@ -1,9 +1,16 @@
+{% load static %}
+
 <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
   <div class="flex-grow-1">
     <h3 class="mb-0">{{ title }}</h3>
     <div class="subheading mb-3">
       {% if src %}
-      <img alt="icon" src="{{ src }}" style="max-width: 5rem" class="mr-2" />
+      <img 
+        alt="icon" 
+        src="{% static src %}" 
+        style="max-width: 5rem" 
+        class="mr-2" 
+      />
       {% endif %}
       {{ org }}
     </div>

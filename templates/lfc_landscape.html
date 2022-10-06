@@ -10,8 +10,11 @@
     {% include 'components/carouselIndicators.html' with n='2' %}
 		<div class="carousel-inner">
       {% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1625607231/portfolio/ma_thesis/4nn_xdqbdq.png' 
+        src='img/lfc_landscape/lfc_landscape_splash.png' 
         active=1 
+      %}
+      {% include 'components/carouselItem.html' with 
+        src='img/lfc_landscape/lfc_landscape_1.png' 
       %}
 		</div>
 		{% include 'components/carouselArrows.html' %}

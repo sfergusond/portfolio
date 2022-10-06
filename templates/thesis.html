@@ -7,26 +7,23 @@
 {% block content %}
 <div class="container mt-3 pl-4">
 	<div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
-		{% include 'components/carouselIndicators.html' with n='6' %}
+		{% include 'components/carouselIndicators.html' with n='5' %}
 		<div class="carousel-inner">
       {% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597872696/portfolio/thesis/emran_khalil_byun7e.png' 
+        src='img/thesis/thesis_splash.png' 
         active=1 
       %}
 			{% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871785/portfolio/thesis/fig1.18_oovr37.png' 
+        src='img/thesis/thesis_1.png' 
       %}
 			{% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871786/portfolio/thesis/taliban_word_network_i7awt5.png' 
+        src='img/thesis/thesis_2.png' 
       %}
 			{% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871818/portfolio/thesis/amba_word_network_wmgqlv.png' 
+        src='img/thesis/thesis_3.png' 
       %}
 			{% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871785/portfolio/thesis/unique_words_ythyag.png' 
-      %}
-			{% include 'components/carouselItem.html' with 
-        src='https://res.cloudinary.com/djfs2vi8d/image/upload/v1597871818/portfolio/thesis/fig4.8_toxser.png' 
+        src='img/thesis/thesis_4.png' 
       %}
 		</div>
 		{% include 'components/carouselArrows.html' %}

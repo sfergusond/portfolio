@@ -1,5 +1,11 @@
+{% load static %}
+
 <div class="card bg-white border-primary text-center shadow">
-  <img alt="icon" src="{{ src }}" class="card-img-top p-1" alt="">
+  <img 
+    alt="icon" 
+    src="{% static src %}" 
+    class="card-img-top p-1"
+  />
   <div class="card-body">
     <h4 class="card-title">{{ title }}</h4>
     {% if subtitle %}
