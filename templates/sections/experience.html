@@ -4,27 +4,49 @@
 		<h2 class="mb-5">Experience</h2>
 
     {% include 'components/experience.html' with 
+      title='Senior Software Engineer' 
+      org='Aurora Innovation'
+      src='img/icon/aurora.png' 
+      date='March 2024 - Present' 
+    %}
+    <div class="col-10 mb-4">
+      <p>Led development on a highly cross functional effort to address a group of high severity “long tail” autonomy scenarios.</p>
+    </div>
+
+    {% include 'components/experience.html' with 
       title='Software Engineer II' 
       org='Aurora Innovation'
       src='img/icon/aurora.png' 
-      date='December 2022 - Present' 
+      date='January 2023 - March 2024' 
     %}
     <div class="col-10 mb-4">
-      <p>Designed & implemented production-grade software for Aurora Driver, Aurora's flagship product that autonomously operates passenger vehicles, light commercial vehicles, and heavy-duty trucks</p>
+      <p>
+        Architected a Python gRPC web service enabling vehicle-to-vehicle and dispatch-to-vehicle communication for the entire autonomous vehicle (AV) fleet,
+        meeting near-100% uptime and sub-500ms latency requirements.
+      </p> 
+      <p>
+        Built custom pipelines & infrastructure using Terraform, bash scripts, and Python to ensure high availability, streamline CI/CD, 
+        implement tracing & alerting, enforce authorization, and perform database management.
+      </p>
+      <p>
+        Built an end-to-end high-definition mapping system allowing AVs to remap dynamic areas of the road on the fly. 
+        The system enabled AVs to obtain an accurate version of the map to navigate complex environments within minutes of detecting inaccuracies, 
+        compared to the prior system that took days while also requiring vehicles to download new map content while at rest in a terminal.
+      </p>
+      <p>Wrote embedded software modules in C++ to improve autonomous driving performance when encountering complex construction zones.</p>
+      <p>Reduced fleet-wide operational risk by creating an early warning alert system for remote operators in advance of risky scenarios.</p>
     </div>
 		
     {% include 'components/experience.html' with 
-      title='Software Engineer - Consultant' 
+      title='Software Engineer' 
       org='Booz Allen Hamilton, Inc'
       src='img/icon/bah.png' 
       date='January 2022 - December 2022' 
     %}
     <div class="col-10 mb-4">
-      <p>Led development across multiple applications in support of a multi-million dollar federal contract</p>
-      <p>Developed custom PHP modules for a high-traffic Drupal-based CMS site critical for U.S. employers to maintain compliance with federal regulations</p>
-      <p>Developed a front end React library using Storybook.js to streamline the implementation of front end components across multiple federal web applications</p>
-      <p>Built a Node.js service to handle high-concurrency file upload tasks</p>
-      <p>Performed ad hoc data extraction requests, built pipelines to handle bulk data upload & cleaning tasks, and advised the client on application architecting</p>
+      <p>Led development of multiple cloud applications microservices to handle high-concurrency file uploads in support of a multi-million dollar U.S. federal contract</p>
+      <p>Built custom PHP modules for a high-traffic Drupal-based CMS site critical for U.S. employers to maintain Equal Opportunity certification</p>
+      <p>Developed a React component library using Storybook.js to streamline the implementation of front end components across multiple federal web applications</p>
     </div>
 
     {% include 'components/experience.html' with 
@@ -34,12 +56,13 @@
       date='October 2021 - October 2022' 
     %}
     <div class="col-10 mb-4">
-      <p>Streamlined the decision-making process in philanthropic prize competitions by the MacArthur Foundation/Lever for Change by leveraging big data, natural language processing (NLP), text mining, machine learning, and data modelling techniques.</p>
-      <p>Built data processing tools to help unlock the social impact of $1 billion in annual prize money awarded by Lever for Change</p>
       <p>
-        Developed an innovative score adjustment process for grant competitions using a blend of statistical, NLP, and machine learning approaches.
-        The score adjustment process removes bias from expert judge reviews and increases the odds of maximizing the social impact of winning grant proposals.
+        Developed an innovative score adjustment process for grant applications using a blend of statistical, natural language processing (NLP), 
+        and machine learning approaches. The score adjustment process significantly mitigated bias incurred by expert judge reviews, 
+        increasing the odds of surfacing highly impactful grant proposals.
       </p>
+      <p>Streamlined philanthropic prize competitions by machine learning approaches to accelerate and de-bias the grant application review process.</p>
+      <p>Built data processing tools to help unlock the social impact of $1 billion in annual prize money awarded by Lever for Change</p>
       <p>
         Relevant GitHub repos:
         <a href="https://github.com/LeverForChange/proposal-similarity-pipeline" target="_blank">Grant Proposal Clustering Model Pipeline</a>,
@@ -54,9 +77,8 @@
       date='July 2020 - September 2021' 
     %}
     <div class="col-10 mb-4">
-      <p>Designed & built over 6 distinct web applications for a range of clients. See <a class="js-scroll-trigger" href="#portfolio">portfolio</a> for a detailed project list</p>
+      <p>Designed & built web applications for a variety of clients. See <a class="js-scroll-trigger" href="#portfolio">portfolio</a> for a detailed project list</p>
       <p>Delivered secure & scalable solutions at minimal cost using best-practices in database architecting, data engineering & ETL, REST API, cloud computing services, and server-side programming</p>
-      <p>Project highlight: A marketplace and analytic platform for podcasters to sell advertisement slots to relevant brands</p>
     </div>
 		
     {% include 'components/experience.html' with 
